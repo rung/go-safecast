@@ -50,5 +50,5 @@ Link: [Go Playground](https://play.golang.org/p/YsKayPgMX7k)
 
 ### When using this library, your code is safe
 ![native int32](img/safecast-int32.png)  
-This library can detect integer overflow. so you can convert integer in a safe way.
+This library can detect integer overflow. so you can convert integer in a safe way.  
 Link: [Go Playground](https://play.golang.org/p/VUkXLIijq6Q)
