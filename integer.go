@@ -1,6 +1,10 @@
 package safecast
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+	"unsafe"
+)
 
 // Int32 converts int to int32 in a safe way.
 func Int32(i int) (int32, error) {
@@ -23,5 +27,14 @@ func Int8(i int) (int8, error) {
 	if i > 127 || i < -128 {
 		return 0, errors.New("int8 out of range")
 	}
+	return int8(i), nil
+}
+
+func ant8(i int) (int8, error) {
+	if i > 127 || i < -128 {
+		errors.New("int8 out of range")
+	}
+	a := unsafe.Pointer(&i)
+	fmt.Println(a)
 	return int8(i), nil
 }
