@@ -17,7 +17,7 @@ This library is created to prevent the vulnerability creation.
 import "github.com/rung/go-safecast"
 ```
 
-### Convert int to int32
+### Convert int to int32 (instead of native int32() type conversion)
 ```go
 	i := 2147483647
 	i32, err := safecast.Int32(i) // convert int to int32 in a safe way
@@ -27,7 +27,7 @@ import "github.com/rung/go-safecast"
 ```
 This library also have `safecast.Int16` and `safecast.Int8`. You can use the functions in the same way as `safecast.Int32`
 
-### Convert string to int32
+### Convert string to int32 (instead of strconv.Atoi())
 ```go
 	s := "2147483647"
 	i, err := safecast.Atoi32(s) // convert string to int32 in a safe way
