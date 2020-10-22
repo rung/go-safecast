@@ -4,7 +4,7 @@ Library for safe type conversion in Go
 ## Usage
 
 ```go
-import "rung/go-safecast"
+import "github.com/rung/go-safecast"
 ```
 
 ### Convert int to int32
