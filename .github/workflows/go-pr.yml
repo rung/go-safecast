@@ -1,8 +1,6 @@
 name: go-pr
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -25,6 +23,8 @@ jobs:
       run: make test
 
     - name: Lint
+      env:
+        REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         make install-linters
         make reviewdog-ci
