@@ -25,8 +25,3 @@ func Int8(i int) (int8, error) {
 	}
 	return int8(i), nil
 }
-
-// Uint32 converts int to uint32 in a safe way.
-func Uint32(i uint) (uint32, error) {
-	
-}
