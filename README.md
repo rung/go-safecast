@@ -47,10 +47,10 @@ This library also have `safecast.Atoi16` and `safecast.Atoi8`. You can use the f
 ### When using native int32(), the code cause overflows
 <img src="img/native-int32.png" width="700px">  
 
-Link: [Go Playground](https://play.golang.org/p/YsKayPgMX7k)
+Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
 
 ### When using this library, your code is safe
 <img src="img/safecast-int32.png" width="700px">  
 This library can detect integer overflow. so you can convert integer in a safe way.  
 
-Link: [Go Playground](https://play.golang.org/p/VUkXLIijq6Q)
+Link: [Go Playground](https://play.golang.org/p/1xeeyt-feLI)
