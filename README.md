@@ -40,7 +40,7 @@ This library also have `safecast.Atoi16` and `safecast.Atoi8`. You can use the f
 
 ## What happens when overflows
 ### Range of each integer
-|       | int32 - signed 32bit integer         | int16 - 16bit signed integer | int8 - 8bit signed integer | 
+|       | int32 (32bit signed integer)         | int16 (16bit signed integer) | int8 (8bit signed integer) | 
 | :---: | :----------------------------------: | :--------------------------: | :------------------------: | 
 | Range | From -2,147,483,648 to 2,147,483,647 | From -32,768 to 32,767       | From -128 to 127           | 
 
