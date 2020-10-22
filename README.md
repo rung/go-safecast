@@ -54,3 +54,6 @@ Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
 This library can detect integer overflow. so you can convert integer in a safe way.  
 
 Link: [Go Playground](https://play.golang.org/p/1xeeyt-feLI)
+
+## License
+[MIT License](LICENSE)
