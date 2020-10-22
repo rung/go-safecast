@@ -45,13 +45,15 @@ This library also have `safecast.Atoi16` and `safecast.Atoi8`. You can use the f
 | Range | From -2,147,483,648 to 2,147,483,647 | From -32,768 to 32,767       | From -128 to 127           | 
 
 ### When using native int32(), the code cause overflows
-![native int32](img/native-int32.png)  
-Link: [Go Playground](https://play.golang.org/p/YsKayPgMX7k)
+<img src="img/native-int32.png" width="700px">  
+
+Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
 
 ### When using this library, your code is safe
-![native int32](img/safecast-int32.png)  
+<img src="img/safecast-int32.png" width="700px">  
 This library can detect integer overflow. so you can convert integer in a safe way.  
-Link: [Go Playground](https://play.golang.org/p/VUkXLIijq6Q)
+
+Link: [Go Playground](https://play.golang.org/p/1xeeyt-feLI)
 
 ## License
 [MIT License](LICENSE)
