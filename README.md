@@ -7,7 +7,7 @@ When you convert `int`(`int64`) to `int32`, `int8` or `int6`, Your code could ha
 
 In 2019, [Kubernetes](https://kubernetes.io/) had the vulnerability. and the vulnerability was found on [Security Audit Project](https://github.com/kubernetes/community/blob/master/sig-security/security-audit-2019/findings/Kubernetes%20Final%20Report.pdf) by Trail of Bits.
 
-This library is created to prevent the vulnerability creation.
+You can use this library to prevent the vulnerability creation.
 
 **(This library is heavily inspired by Kubernetes's Security Audit Report by Trail of Bits)**
 
