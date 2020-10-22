@@ -25,7 +25,7 @@ import "github.com/rung/go-safecast"
 		return err
 	}
 ```
-This library also have `safecast.Int16` and `safecast.Int8`. You can use the functions in the same way as `safecast.Int32`
+This library also has `safecast.Int16` and `safecast.Int8`. You can use the functions in the same way as `safecast.Int32`
 
 ### Convert string to int32 (instead of strconv.Atoi())
 ```go
