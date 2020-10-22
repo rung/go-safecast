@@ -51,7 +51,7 @@ Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
 
 ---
 
-### When using safetest.Int32() on this library, your code is safe
+### When using safecast.Int32() on this library, your code is safe
 <img src="img/safecast-int32.png" width="700px">  
 This library can detect integer overflow. so you can convert integer in a safe way.  
 
