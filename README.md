@@ -9,7 +9,7 @@ In 2019, [Kubernetes](https://kubernetes.io/) had the vulnerability. and the vul
 
 You can use this library to prevent the vulnerability creation.
 
-**(This library is heavily inspired by Kubernetes's Security Audit Report by Trail of Bits)**
+**(This library is inspired by Kubernetes's Security Audit Report by Trail of Bits)**
 
 ## Usage
 
@@ -32,10 +32,10 @@ This library also have `safecast.Int16` and `safecast.Int8`. You can use the fun
 	s := "2147483647"
 	i, err := safecast.Atoi32(s) // convert string to int32 in a safe way
 	if err != nil {
-		return i
+		return err
 	}
 ```
-This library also have `safecast.Atoi16` and `safecast.Atoi8`. You can use the functions in the same way as `safecast.Atoi32`
+This library also has `safecast.Atoi16` and `safecast.Atoi8`. You can use the functions in the same way as `safecast.Atoi32`
 
 
 ## What happens when overflows
@@ -44,7 +44,7 @@ This library also have `safecast.Atoi16` and `safecast.Atoi8`. You can use the f
 | :---: | :----------------------------------: | :--------------------------: | :------------------------: | 
 | Range | From -2,147,483,648 to 2,147,483,647 | From -32,768 to 32,767       | From -128 to 127           | 
 
-### When using native int32(), the code cause overflows
+### When using native int32(), the code causes overflows
 <img src="img/native-int32.png" width="700px">  
 
 Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
