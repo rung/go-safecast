@@ -46,6 +46,7 @@ This library also has `safecast.Atoi16` and `safecast.Atoi8`. You can use the fu
 
 ## When using native int32(), the code causes overflows
 <img src="img/native-int32.png" width="700px">  
+Native int32() type conversion doesn't return error when the code cause integer overflow.
 
 Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
 
@@ -53,7 +54,8 @@ Link: [Go Playground](https://play.golang.org/p/tyATM4dL33x)
 
 ## When using safecast.Int32() on this library, your code is safe
 <img src="img/safecast-int32.png" width="700px">  
-This library can detect integer overflow. so you can convert integer in a safe way.  
+This library returns error when the value is out of the 32-bit range.  
+So you can convert integer in a safe way.  
 
 Link: [Go Playground](https://play.golang.org/p/1xeeyt-feLI)
 
