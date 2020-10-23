@@ -51,7 +51,7 @@ func TestAtoi16(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			value: "32767",
+			value: "32768",
 			wantInt16: 32767,
 			wantErr: false,
 		},
