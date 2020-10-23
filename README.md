@@ -5,8 +5,7 @@ Library for safe type conversion in Go
 The type of `int` equals `int64` on 64-bit machine in Go.  
 When you convert `int`(`int64`) to `int32`, `int8` or `int6`, Your code could have Integer Overflow vulnerability.
 
-In 2019, [Kubernetes](https://kubernetes.io/) had the vulnerability. and the vulnerability was found on [Security Audit Project](https://github.com/kubernetes/community/blob/master/sig-security/security-audit-2019/findings/Kubernetes%20Final%20Report.pdf) by Trail of Bits.
-
+In 2019, [Kubernetes](https://kubernetes.io/) had the vulnerability. and the vulnerability was found on [Security Audit Project](https://github.com/kubernetes/community/blob/master/sig-security/security-audit-2019/findings/Kubernetes%20Final%20Report.pdf) by Trail of Bits.  
 You can use this library to prevent the vulnerability creation.
 
 **(This library is inspired by Kubernetes's Security Audit Report by Trail of Bits)**
@@ -25,6 +24,7 @@ import "github.com/rung/go-safecast"
 		return err
 	}
 ```
+The function return error when the value is out of the 32-bit range.  
 This library also has `safecast.Int16` and `safecast.Int8`. You can use the functions in the same way as `safecast.Int32`
 
 ## Convert string to int32 (instead of strconv.Atoi())
@@ -35,6 +35,7 @@ This library also has `safecast.Int16` and `safecast.Int8`. You can use the func
 		return err
 	}
 ```
+The function return error when the value is out of the 32-bit range.  
 This library also has `safecast.Atoi16` and `safecast.Atoi8`. You can use the functions in the same way as `safecast.Atoi32`  
 
 # What happens when overflows
