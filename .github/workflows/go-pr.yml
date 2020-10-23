@@ -5,9 +5,8 @@ on:
     branches: [ main ]
 
 jobs:
-
-  build:
-    name: Build
+  test_and_lint:
+    name: test and lint
     runs-on: ubuntu-latest
     steps:
 
