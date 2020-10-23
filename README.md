@@ -24,7 +24,7 @@ import "github.com/rung/go-safecast"
 		return err
 	}
 ```
-The function return error when the value is out of the 32-bit range.  
+The function returns error when the value is out of the 32-bit range.  
 This library also has `safecast.Int16` and `safecast.Int8`. You can use the functions in the same way as `safecast.Int32`
 
 ## Convert string to int32 (instead of strconv.Atoi())
@@ -35,7 +35,7 @@ This library also has `safecast.Int16` and `safecast.Int8`. You can use the func
 		return err
 	}
 ```
-The function return error when the value is out of the 32-bit range.  
+The function returns error when the value is out of the 32-bit range.  
 This library also has `safecast.Atoi16` and `safecast.Atoi8`. You can use the functions in the same way as `safecast.Atoi32`  
 
 # What happens when overflows
